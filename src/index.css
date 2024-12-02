@@ -81,6 +81,21 @@ nav {
   padding: 16px;
   overflow: auto;
 }
+  /* スクロールバーのスタイリング */
+  .markdown-content pre ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  
+  .markdown-content pre ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  .markdown-content pre ::-webkit-scrollbar-thumb {
+    background-color: var(--border-color);
+    border-radius: 3px;
+  }
+
 
 .markdown-content blockquote {
   border-left: 4px solid var(--border-color);
