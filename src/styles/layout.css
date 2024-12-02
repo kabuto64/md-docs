@@ -1,0 +1,23 @@
+.content-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 250px;
+    gap: 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  .markdown-content {
+    min-width: 0; /* グリッドアイテムのはみ出し防止 */
+  }
+  
+  /* モバイル対応 */
+  @media (max-width: 1200px) {
+    .content-wrapper {
+      grid-template-columns: 1fr;
+    }
+    
+    .table-of-contents {
+      display: none; /* モバイルでは目次を非表示 */
+    }
+  }
